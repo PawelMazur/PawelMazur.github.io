@@ -25,6 +25,12 @@ window.onload = function() {
     animate();
 }
 
+window.addEventListener('mousemove', function(event) {
+    mouse.x = event.x;
+    mouse.y = event.y;
+}, false);
+
+
 window.addEventListener('touchdown', function(event) {
     mouse.x = event.x;
     mouse.y = event.y;
